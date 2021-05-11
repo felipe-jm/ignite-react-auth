@@ -6,6 +6,7 @@ import { AuthContext } from "contexts/AuthContext";
 
 import styles from "styles/Home.module.css";
 import { withSSRGuest } from "utils/withSSRGuest";
+import { api } from "services/apiClient";
 
 const Home = () => {
   const { signIn } = useContext(AuthContext);
@@ -43,12 +44,10 @@ const Home = () => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = withSSRGuest(
-  async (ctx) => {
-    return {
-      props: {},
-    };
-  }
-);
+export const getServerSideProps = withSSRGuest(async (ctx) => {
+  return {
+    props: {},
+  };
+});
 
 export default Home;
