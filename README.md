@@ -5,18 +5,32 @@
 </h1>
 
 <h4 align="center">
-  An web app to clarify some authentication concepts including JWT, access tokens and refresh tokens :lock:
+  An web app to clarify some authentication concepts including JWT, access tokens, refresh tokens and user permissions :lock:
 </h4>
 
 ## :information_source: How To Use
 
 ```bash
+# Clone the backend to generate de access and refresh tokens
+git clone https://github.com/rocketseat-education/ignite-reactjs-auth-backend.git
+
+cd ignite-reactjs-auth-backend
+
+# Install dependencies
+yarn
+
+# Start the backend
+yarn dev
+
+# Clone the frontend
 git clone https://github.com/felipe-jm/ignite-react-auth.git
 
 cd ignite-react-auth
 
+# Install dependencies
 yarn
 
+# Start the frontend
 yarn dev
 ```
 
